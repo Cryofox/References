@@ -1,0 +1,12 @@
+
+When Speed is an issue:
+(1st Convert your numbers to base 2)
+(i.e. If you have an array of max size 10, instead use a 2^x number)
+
+Multiplication:
+				x*2^y = x << y
+Division:
+				x/2^y = x >> y ( Stdrd Divide rounds negatives up, shift rounds down [minor error])
+Mod:
+				x%2^y = x &(2^y-1)
+				
